@@ -18,6 +18,7 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
+
   color: rgb(135, 135, 135);
   font-size: 16px;
   font-weight: 100;
@@ -28,9 +29,12 @@ li:first-letter {
   text-transform: capitalize;
 }
 
-.weather-app {
+.weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
+}
+
+.weather-app {
   padding: 20px;
   border: 1px solid #97a8f8;
   border-radius: 5px;
@@ -42,17 +46,14 @@ li:first-letter {
   );
 }
 
-.weather-app-wrapper {
-  max-width: 600px;
-  margin: 30px auto;
-}
-
 .d-flex-weather-temperature {
   float: left;
 }
 
 .d-flex-weather-temperature img {
   margin-right: 10px;
+  height: 64px;
+  width: 64px;
 }
 
 .d-flex-weather-temperature strong {
@@ -80,7 +81,7 @@ li:first-letter {
 }
 
 .d-flex-weather-temperature .active:hoover {
-  text-decorataion: none;
+  text-decoration: none;
 }
 
 .weather-forecast {
@@ -98,10 +99,10 @@ li:first-letter {
   opacity: 0.5;
 }
 
-.col-2 {
-  width: 13.666667%;
-}
-
 .weather-forecast-temperatures {
   font-size: 13px;
+}
+
+.col-2 {
+  width: 13.666667%;
 }
